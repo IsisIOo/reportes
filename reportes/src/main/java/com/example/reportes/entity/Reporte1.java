@@ -17,11 +17,10 @@ public class Reporte1 {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(unique = true, nullable = false)
     private Long id; //no lo asigno
-    String patent;
     int mesPedido;
     double varianza1;
-    double varianza2;
     int mesSiguiente;
+    double varianza2;
     int mesAnterior;
 
 }
