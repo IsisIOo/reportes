@@ -185,4 +185,23 @@ public class Reporte1Service {
 
 
 
+    //AQUI HAGO UN FEIGN
+    //YA LO HABIA HECHO XD
+
+    public  List<Repair> getAllPARACONECTAR(){
+        List<Repair> repairs = restTemplate.getForObject("http://autofix-repairs/api/repairs/", List.class);
+        return repairs;
+    }
+
+    public List<Car> getallCars(){
+        List<Car> cars = restTemplate.getForObject("http://autofix-car/api/car/", List.class);
+        return cars;
+    }
+
+
+
+
+
+
+
 }
