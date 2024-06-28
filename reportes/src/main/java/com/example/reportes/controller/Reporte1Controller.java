@@ -1,6 +1,5 @@
 package com.example.reportes.controller;
 
-import com.example.reportes.entity.Reporte1;
 import com.example.reportes.model.Car;
 import com.example.reportes.model.Repair;
 import com.example.reportes.service.Reporte1Service;
@@ -17,12 +16,6 @@ public class Reporte1Controller {
     @Autowired
     Reporte1Service reporte1Service;
 
-
-    @PostMapping("/newReporte1/")
-    public ResponseEntity<Reporte1> updateRecord(int mes, String reparacion){
-        Reporte1 report = reporte1Service.setReporte1(mes, reparacion);
-        return ResponseEntity.ok(report);
-    }
 
     @GetMapping("/")
     //este obtiene todos los registros existentes
