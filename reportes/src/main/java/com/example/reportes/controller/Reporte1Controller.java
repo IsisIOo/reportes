@@ -25,7 +25,7 @@ public class Reporte1Controller {
     }
 
     @GetMapping("/car/")
-    public ResponseEntity<List<Car>> getOneRepairByPatent(@RequestParam String patent) {
+    public ResponseEntity<List<Car>> getOneRepairByPatent() {
         List<Car> recordHistory = reporte1Service.getallCars();
         return ResponseEntity.ok(recordHistory);
     }
